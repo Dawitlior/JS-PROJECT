@@ -1,0 +1,38 @@
+@media screen and (max-width:600px) {
+    body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+           background-color: rgba(128, 128, 128, 0.736);
+            background-size: 100vw;
+
+    
+        }
+    
+        .container {
+            display: grid;
+            grid-template-areas:
+                'header header header header'
+                'navbar navbar navbar navbar'
+                'main main main main'
+                'footer footer footer footer';
+            width: auto;
+            height: auto;
+        }
+    
+        #header {
+            grid-area: header;
+        }
+    
+        #navbar {
+            grid-area: navbar;
+        }
+    
+        #main {
+            grid-area: main;
+        }
+    
+        #footer {
+            grid-area: footer;
+        }
+}
