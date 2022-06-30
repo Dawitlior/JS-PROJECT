@@ -3,39 +3,61 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-           background-color: rgba(128, 128, 128, 0.736);
+           background-color: rgba(255, 255, 255, 0.736);
             background-size: 100vw;
-
-    
         }
     
         .container {
             display: grid;
             grid-template-areas:
-                'header header header header'
-                'navbar navbar navbar navbar'
-                'main main main main'
-                'footer footer footer footer';
+                'header header header '
+                'navbar navbar navbar'
+                'main main main '
+                'footer footer footer';
             width: auto;
             height: auto;
+            display: flex;
+            position: relative;
+            
         }
     
         #header {
             grid-area: header;
-            background-color: cornflowerblue;
-            height: 10vh;
+            background-color: black;
+            height: 7vh;
+            position: sticky;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+       
     
         #navbar {
             grid-area: navbar;
+            background-color: goldenrod;
+            
+        }
+        .navUl{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        #div1{
+        display: inline;
+        background-image: url(./images/apple-apple-iphone.gif);
+        
         }
     
         #main {
             grid-area: main;
+            display: flex;
         }
-    
+       
         #footer {
             grid-area: footer;
             background-color: black;
+            height: 7vh;
+            
         }
 }
